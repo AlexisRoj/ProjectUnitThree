@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">ProjectUnitThree</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Array de imagenes del MenuA (MenuA)-->
+    <array name="imgMenuA">
+        <item>@drawable/img1</item>
+        <item>@drawable/img2</item>
+        <item>@drawable/img3</item>
+        <item>@drawable/img4</item>
+        <item>@drawable/img5</item>
+        <item>@drawable/img6</item>
+        <item>@drawable/img7</item>
+        <item>@drawable/img8</item>
+        <item>@drawable/img9</item>
+    </array>
+
+    <!-- Imagenes menu no se borra para mantener el ejemplo-->
+    <array name="colorImgMenuA">
+        <item>@color/fondoImgMA</item>
+        <item>@color/fondoImgMA</item>
+        <item>@color/fondoImgMA</item>
+        <item>@color/fondoTxtAA</item>
+        <item>@color/fondoImgMA</item>
+        <item>@color/fondoImgMA</item>
+        <item>@color/fondoImgMA</item>
+        <item>@color/fondoImgMA</item>
+        <item>@color/fondoImgMA</item>
+    </array>
+
+    <!-- Titulo del menu A-->
+    <string-array name="titleAMenuA">
+        <item>Elemento 1</item>
+        <item>Elemento 2</item>
+        <item>Elemento 3</item>
+        <item>Elemento 4</item>
+        <item>Elemento 5</item>
+        <item>Elemento 6</item>
+        <item>Elemento 7</item>
+        <item>Elemento 8</item>
+        <item>Elemento 9</item>
+    </string-array>
+
+    <!-- Descripcion del titulo del menu A-->
+    <string-array name="descBMenuA">
+        <item>Descripcion 1</item>
+        <item>Descripcion 2</item>
+        <item>Descripcion 3</item>
+        <item>Descripcion 4</item>
+        <item>Descripcion 5</item>
+        <item>Descripcion 6</item>
+        <item>Descripcion 7</item>
+        <item>Descripcion 8</item>
+        <item>Descripcion 9</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
