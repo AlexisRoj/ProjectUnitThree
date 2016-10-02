@@ -1,6 +1,9 @@
 package com.innovagenesis.aplicaciones.android.projectunitthree.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +22,7 @@ import java.util.ArrayList;
  */
 
 public class AdapterMenuA extends BaseAdapter {
+
 
     private ArrayList<MenuA> items;
     private Context context;
@@ -43,6 +47,7 @@ public class AdapterMenuA extends BaseAdapter {
         return position;
     }
 
+    @SuppressLint("NewApi")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -66,10 +71,10 @@ public class AdapterMenuA extends BaseAdapter {
         txtAMenuA.setText(getItem(position).getTxtAMenuA());
         txtBMenuA.setText(getItem(position).getTxtBMenuA());
 
-        /** Seccion para propiedades de los elementos se utliza el segundo contructor*/
+        /** Seccion para propiedades de los elementos */
 
         imgMenuA.setBackgroundResource(getItem(position).getColorImgBGMA());
-
+        txtAMenuA.setTextColor(ContextCompat.getColor(context, getItem(position).getColorImgBGMA()));
 
         return view;
     }
