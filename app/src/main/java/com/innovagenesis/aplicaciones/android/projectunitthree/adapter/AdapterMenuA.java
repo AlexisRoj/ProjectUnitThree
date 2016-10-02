@@ -68,7 +68,8 @@ public class AdapterMenuA extends BaseAdapter {
 
         /** Seccion para propiedades de los elementos se utliza el segundo contructor*/
 
-        //imgMenuA.setBackgroundColor(getItem(position).getColorImgBGMA());
+        imgMenuA.setBackgroundResource(getItem(position).getColorImgBGMA());
+
 
         return view;
     }

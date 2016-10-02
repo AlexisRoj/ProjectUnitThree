@@ -43,6 +43,7 @@ public class MenuAHome extends Fragment {
 
     private ArrayList<MenuA> items() {
 
+        TypedArray colorImgMA = getResources().obtainTypedArray(R.array.colorImgMenuA);
         TypedArray imgMenuA = getResources().obtainTypedArray(R.array.imgMenuA);
         String[] titleMenuA = getResources().getStringArray(R.array.titleAMenuA);
         String[] descMenuA = getResources().getStringArray(R.array.descBMenuA);
@@ -52,6 +53,7 @@ public class MenuAHome extends Fragment {
         for (int i = 0; i < imgMenuA.length(); i++){
 
             lista.add(new MenuA(
+                    colorImgMA.getResourceId(i,0),
                     imgMenuA.getResourceId(i,0),
                     titleMenuA[i],
                     descMenuA[i]));

@@ -9,12 +9,9 @@ public class MenuA {
     private String txtAMenuA;
     private String txtBMenuA;
     private int imgAmenuA;
-    int colorImgBGMA; // color de backgruond Imagen Menu A //
+    private int colorImgBGMA; // color de backgruond Imagen Menu A //
 
-    /** Se utiliza este constructor para cambiar las propiedades del Grid*/
-    public MenuA(int colorImgBGMA) {
-        this.colorImgBGMA = colorImgBGMA;
-    }
+
 
     public int getColorImgBGMA() {
         return colorImgBGMA;
@@ -26,11 +23,12 @@ public class MenuA {
 
     /** Se utiliza este contructor para Agregar los datos al Grid*/
 
-    public MenuA(int imgAmenuA, String txtAMenuA, String txtBMenuA) {
+    public MenuA(int colorImgBGMA, int imgAmenuA, String txtAMenuA, String txtBMenuA) {
 
         this.imgAmenuA = imgAmenuA;
         this.txtAMenuA = txtAMenuA;
         this.txtBMenuA = txtBMenuA;
+        this.colorImgBGMA = colorImgBGMA;
     }
 
     public int getImgAmenuA() {

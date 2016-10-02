@@ -21,7 +21,7 @@
 
     <!-- Imagenes menu no se borra para mantener el ejemplo-->
     <array name="colorImgMenuA">
-        <item>@color/fondoImgMA</item>
+        <item>@color/prueba</item>
         <item>@color/fondoImgMA</item>
         <item>@color/fondoImgMA</item>
         <item>@color/fondoTxtAA</item>
