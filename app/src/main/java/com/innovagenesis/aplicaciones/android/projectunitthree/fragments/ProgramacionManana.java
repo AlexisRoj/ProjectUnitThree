@@ -12,10 +12,10 @@ import com.innovagenesis.aplicaciones.android.projectunitthree.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProgramacionAyer extends Fragment {
+public class ProgramacionManana extends Fragment {
 
 
-    public ProgramacionAyer() {
+    public ProgramacionManana() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class ProgramacionAyer extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_programacion_ayer, container, false);
+        return inflater.inflate(R.layout.fragment_programacion_manana, container, false);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class ProgramacionAyer extends Fragment {
         super.setUserVisibleHint(isVisibleToUser);
 
         if (isVisibleToUser){
-            getActivity().setTitle("Elemento 2");
+            getActivity().setTitle("Elemento 1");
         }
     }
 }

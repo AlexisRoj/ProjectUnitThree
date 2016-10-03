@@ -27,4 +27,12 @@ public class ProgramacionHoy extends Fragment {
         return inflater.inflate(R.layout.fragment_programacion_hoy, container, false);
     }
 
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+
+        if (isVisibleToUser){
+            getActivity().setTitle("Elemento 3");
+        }
+    }
 }

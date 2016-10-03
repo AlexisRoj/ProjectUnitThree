@@ -26,7 +26,6 @@ public class SwipeDesplazamiento extends FragmentPagerAdapter {
         else{
             return new ProgramacionManana();
         }
-        return null;
     }
 
     @Override
