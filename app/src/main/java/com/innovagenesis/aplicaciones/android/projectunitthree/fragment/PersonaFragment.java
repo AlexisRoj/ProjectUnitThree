@@ -34,8 +34,7 @@ public class PersonaFragment extends Fragment {
     }
 
     public void onClickEnviarPersona(View view) {
-
-
+        /** Boton que realiza el envio del argumento*/
 
         String nombre = ((EditText) view.findViewById(R.id.edit_nombre)).getText().toString();
         String apellidos = ((EditText) view.findViewById(R.id.edit_apellidos)).getText().toString();
@@ -50,10 +49,8 @@ public class PersonaFragment extends Fragment {
 
         fragmento.setArguments(argumentos);
 
+        /** Metodo de Cambio de fragment*/
         util.remplazarFragment(R.id.contenedor,2,fragmento,getActivity(),"attach");
 
-/*        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.contenedor, fragmento)
-                .commit();*/
     }
 }

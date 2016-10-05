@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = new MenuAHome();
 
         util.remplazarFragment(R.id.content_main,1,fragment,this,"normal").commit();
+
+
+
+
     }
 
     @Override

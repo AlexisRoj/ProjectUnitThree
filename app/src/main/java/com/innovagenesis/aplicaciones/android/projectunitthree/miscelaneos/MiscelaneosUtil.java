@@ -19,25 +19,17 @@ public class MiscelaneosUtil {
 
     public FragmentTransaction remplazarFragment
             (int contenedor, int tipo, Fragment fragment, FragmentActivity activity, String typeAction) {
-
-
-
         /**    Encargada de cambiar los fragments en el contenedor
          *
          *   El primer elemento es el contendor que se va a cambiar
          *   El segundo es el tipo de accion
          *   El tercero es el fragment que va a sustituir el contenedor
          *   El cuarto es el contexto de la actividad
-         *
-         *
          ***/
-
         FragmentTransaction ft = null;
 
         switch (typeAction){
-
             case "normal" :{
-
                 FragmentManager fm = activity.getSupportFragmentManager();
                 ft = fm.beginTransaction();
                 if (tipo == 1) {
@@ -47,17 +39,16 @@ public class MiscelaneosUtil {
                 }
                 break;
             }
-
             case "attach" :{
                 ft = activity.getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.contenedor, fragment);
+                        .replace(contenedor, fragment);
                 break;
             }
         }
 
         return ft;
-
-
+    }
+}
 
 
 
@@ -72,6 +63,3 @@ public class MiscelaneosUtil {
 
         return ft;
 */
-    }
-
-}
