@@ -34,7 +34,7 @@
 
     <!-- Titulo del menu A-->
     <string-array name="titleAMenuA">
-        <item>Elemento 1</item>
+        <item>Comunicacion Bundle</item>
         <item>Elemento 2</item>
         <item>Elemento 3</item>
         <item>Elemento 4</item>
@@ -47,7 +47,7 @@
 
     <!-- Descripcion del titulo del menu A-->
     <string-array name="descBMenuA">
-        <item>Descripcion 1</item>
+        <item>Ejemplo de la comunicacion de un Bundle</item>
         <item>Descripcion 2</item>
         <item>Descripcion 3</item>
         <item>Descripcion 4</item>
@@ -61,5 +61,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--Strings del Bundle-->
+    <string name="fragmento_de_mensaje">Fragmento de mensaje</string>
+    <string name="fragment_mensaje_xml">fragment_mensaje.xml</string>
+    <string name="parametros_obtenidos">Parametros obtenidos:</string>
+    <string name="parametro_1">Parametro 1:</string>
+    <string name="parametro_2">Parametro 2:</string>
+    <string name="parametro_3">Parametro 3:</string>
+
+    <!-- Enviando Objetos con Bundle -->
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="enviar_persona">Enviar persona</string>
 
 </resources>

@@ -7,24 +7,25 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.innovagenesis.aplicaciones.android.projectunitthree.adapter.AdapterMenuA;
 import com.innovagenesis.aplicaciones.android.projectunitthree.container.MenuA;
+import com.innovagenesis.aplicaciones.android.projectunitthree.fragment.MensajeFragment;
+import com.innovagenesis.aplicaciones.android.projectunitthree.fragment.PersonaFragment;
+import com.innovagenesis.aplicaciones.android.projectunitthree.miscelaneos.MiscelaneosUtil;
 
 import java.util.ArrayList;
 
-
 /**
- * A simple {@link Fragment} subclass.
+ * Administra los frgaments del menu
  */
-public class MenuAHome extends Fragment {
-
+public class MenuAHome extends Fragment implements AdapterView.OnItemClickListener {
 
     public MenuAHome() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,9 +37,9 @@ public class MenuAHome extends Fragment {
 
         GridView grid = (GridView)view.findViewById(R.id.gridMenuA);
         grid.setAdapter(adapter);
+        grid.setOnItemClickListener(this);
 
         return view;
-
     }
 
     private ArrayList<MenuA> items() {
@@ -62,4 +63,41 @@ public class MenuAHome extends Fragment {
         return lista;
     }
 
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        Fragment fragment;
+
+        MiscelaneosUtil util = new MiscelaneosUtil();
+
+        switch (position){
+
+            case 0: {
+
+                /** Hace la comunicacion de los fragmentos mediante el Bundle
+                 * comunicacion simple de datos*/
+
+                fragment = new MensajeFragment();
+
+                Bundle argmentos = new Bundle();
+                argmentos.putString("cadena", "Bienvenido a Next University.");
+                argmentos.putInt("entero", 1);
+                argmentos.putFloat("decimal", 2.3f);
+
+                util.remplazarFragment(R.id.content_main,2,fragment,getActivity(),"normal").commit();
+
+                fragment.setArguments(argmentos);
+                break;
+
+            }
+
+            case 1:{
+
+                //fragment = new PersonaFragment();
+                util.remplazarFragment(R.id.content_main,2,new PersonaFragment(),getActivity(),"normal").commit();
+                break;
+            }
+        }
+
+    }
 }

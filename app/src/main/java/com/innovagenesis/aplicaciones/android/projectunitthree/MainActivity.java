@@ -15,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.innovagenesis.aplicaciones.android.projectunitthree.miscelaneos.MiscelaneosUtil;
 /* Activity principal*/
 
 public class MainActivity extends AppCompatActivity
@@ -45,12 +47,11 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
+        MiscelaneosUtil util = new MiscelaneosUtil();
         Fragment fragment = new MenuAHome();
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.content_main,fragment).commit();
 
-
+        util.remplazarFragment(R.id.content_main,1,fragment,this,"normal").commit();
     }
 
     @Override
