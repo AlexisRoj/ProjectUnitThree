@@ -12,8 +12,8 @@ import android.widget.GridView;
 
 import com.innovagenesis.aplicaciones.android.projectunitthree.adapter.AdapterMenuA;
 import com.innovagenesis.aplicaciones.android.projectunitthree.container.MenuA;
+import com.innovagenesis.aplicaciones.android.projectunitthree.fragment.ContenedorComunicacionFragmnet;
 import com.innovagenesis.aplicaciones.android.projectunitthree.fragment.MensajeFragment;
-import com.innovagenesis.aplicaciones.android.projectunitthree.fragment.PersonaFragment;
 import com.innovagenesis.aplicaciones.android.projectunitthree.miscelaneos.MiscelaneosUtil;
 
 import java.util.ArrayList;
@@ -84,8 +84,7 @@ public class MenuAHome extends Fragment implements AdapterView.OnItemClickListen
                 argmentos.putInt("entero", 1);
                 argmentos.putFloat("decimal", 2.3f);
 
-                util.remplazarFragment(R.id.content_main,2,fragment,getActivity(),"normal").commit();
-
+                util.remplazarFragment(R.id.content_main,2,fragment,getActivity()).commit();
                 fragment.setArguments(argmentos);
                 break;
 
@@ -93,8 +92,8 @@ public class MenuAHome extends Fragment implements AdapterView.OnItemClickListen
 
             case 1:{
 
-                //fragment = new PersonaFragment();
-                util.remplazarFragment(R.id.content_main,2,new PersonaFragment(),getActivity(),"normal").commit();
+                fragment = new ContenedorComunicacionFragmnet();
+                util.remplazarFragment(R.id.content_main,2,fragment,getActivity()).commit();
                 break;
             }
         }

@@ -69,9 +69,13 @@
     <string name="parametro_2">Parametro 2:</string>
     <string name="parametro_3">Parametro 3:</string>
 
-    <!-- Enviando Objetos con Bundle -->
-    <string name="nombre">Nombre</string>
-    <string name="apellidos">Apellidos</string>
-    <string name="enviar_persona">Enviar persona</string>
+    <!-- Comunciacion Fragmentos -->
+    <string name="fragmento_emisor">Fragmento Emisor</string>
+    <string name="fragmento_emisor_xml">fragmento_emisor.xml</string>
+    <string name="enviar">Enviar</string>
+    <string name="hint_mensaje">Escribe un mensaje</string>
+    <string name="mensaje_recibido">El mensaje que se ha recibido es el siguiente:</string>
+    <string name="fragmento_receptor">Fragmento Receptor</string>
+    <string name="fragmento_receptor_xml">fragmento_receptor.xml</string>
 
 </resources>

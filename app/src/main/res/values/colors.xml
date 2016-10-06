@@ -10,4 +10,7 @@
     <color name="prueba">#009688</color>
 
     <color name="gray">#CCCCCC</color>
+
+    <color name="colorBgFragmentA">#E0F7FA</color>
+    <color name="colorBgFragmentB">#E3F2FD</color>
 </resources>
